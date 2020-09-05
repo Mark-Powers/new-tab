@@ -26,12 +26,24 @@ function loadWeather() {
         }, "")
     }
 }
-if(!window.localStorage.weather){
+let fetchWeather = true;
+if(window.localStorage.weather_date){
+    let last_update = new Date(Date.parse(window.localStorage.weather_date))
+    let diff = new Date() - last_update;
+    // If one hour difference don't fetch
+    if(diff / (1000 * 60 * 60) < 1) { 
+        fetchWeather = false;
+    }
+}
+
+if(fetchWeather){
     fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${LAT}&lon=${LON}&APPID=${OPEN_WEATHER_API_KEY}&units=${WEATHER_UNITS}&exclude=hourly,minutely`)
         .then(response => response.json())
         .then(data => {
-            console.log(data)
+            window.localStorage.weather_date = new Date();
             window.localStorage.weather = JSON.stringify(data); 
+            loadWeather()
         });
-}            
-loadWeather()
+} else {
+    loadWeather()
+}
