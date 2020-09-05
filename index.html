@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>New Tab</title>
+</head>
+
+<body>
+    <h1></h1>
+    <span class="search"><input id="searchInput" placeholder="Search..."><button id="searchBtn">Go</button></span>
+    <div class="items">
+        <a class="item" href="https://budget.marks.kitchen">
+            <span class="icon">💰</span>BUDGET
+        </a>
+        <a class="item" id="calendar">
+            <span class="icon">📅</span>CALENDAR
+        </a>
+        <a class="item" id="filefeed">
+            <span class="icon">🗃️</span>FILE FEED
+        </a>
+        <a class="item" id="files">
+            <span class="icon">📁</span>FILES
+        </a>
+        <a class="item" href="https://fosstodon.org">
+            <span class="icon">#️⃣</span>FOSSTODON
+        </a>
+        <a class="item" id="gitea">
+            <span class="icon">💾</span>GITEA
+        </a>
+        <a class="item" id="rss">
+            <span class="icon">📰</span>RSS
+        </a>
+        <a class="item" id="rssvideo">
+            <span class="icon">📺</span>RSS VIDEO
+        </a>
+        <a class="item" href="https://news.ycombinator.com/">
+            <span class="icon">🐱‍💻</span>HN
+        </a>
+        <a class="item" id="wiki">
+            <span class="icon">📖</span>WIKI
+        </a>
+        <a class="item" id="wunderground">
+            <span class="icon">🌩️</span>WUNDERGROUND
+        </a>
+        <a class="item" href="https://www.youtube.com/feed/subscriptions">
+            <span class="icon">📽️</span>YOUTUBE
+        </a>
+    </div>
+    <table class="weather">
+        <tr>
+            <td rowspan="2">
+                <image id="weatherIcon"></image>
+            </td>
+            <td>Temp</td>
+            <td>Humid</td>
+            <td>Feels</td>
+            <td>UVI</td>
+        </tr>
+        <tr>
+            <td id="weatherTemp"></td>
+            <td id="weatherHumid"></td>
+            <td id="weatherFeels"></td>
+            <td id="weatherUVI"></td>
+        </tr>
+    </table>
+    <table class="forecast">
+        <tr>
+            <th id="day1">Tomorrow</th>
+            <th id="day2">The Next Day</th>
+            <th id="day3">The Day After That</th>
+        </tr>
+        <tr>
+            <image id="day1icon"></image>
+            <image id="day2icon"></image>
+            <image id="day3icon"></image>
+        </tr>
+        <tr>
+            <td id="day1high"></td>
+            <td id="day2high"></td>
+            <td id="day3high"></td>
+        </tr>
+        <tr>
+            <td id="day1low"></td>
+            <td id="day2low"></td>
+            <td id="day3low"></td>
+        </tr>
+        <tr>
+            <td id="day1pop"></td>
+            <td id="day2pop"></td>
+            <td id="day3pop"></td>
+        </tr>
+        <tr>
+            <td id="day1desc"></td>
+            <td id="day2desc"></td>
+            <td id="day3desc"></td>
+        </tr>
+    </table>
+    <script src="config.js"></script>
+    <script src="link-manager.js"></script>
+    <script src="weather-manager.js"></script>
+    <script src="search-manager.js"></script>
+</body>
+
+</html>

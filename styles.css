@@ -1,0 +1,93 @@
+body {
+    width: 80%;
+    margin-left: 10%;
+    background-color: #333;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a.item,
+a.item:visited {
+    color: #ddd;
+    display: block;
+    font-size: 24pt;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-decoration: none;
+    min-width: 10em;
+    min-height: 2em;
+    text-align: center;
+    line-height: 2em;
+    flex-grow: 1;
+    box-shadow: 0 5px #999;
+}
+
+a:hover,
+a:hover:visited {
+    background-color: #222;
+}
+
+a:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px #666;
+}
+
+span.search {
+    width: 100%;
+    display: flex;
+}
+
+span.icon {
+    margin-right: 10px;
+}
+
+input {
+    height: 48px;
+    font-size: 28px;
+    flex-grow: 4;
+    margin-left: 10px;
+}
+
+button {
+    height: 48px;
+    font-size: 28px;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.weather {
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.weather td {
+    width: 200px;
+}
+
+#weatherIcon {
+    width: 100px;
+}
+.forecast{
+    color: #fff;
+    text-align: center;            
+    line-height: 50px;
+    text-align: center;
+}
+.forecast th, .forecast td {
+    border: 1px solid white;
+    margin: 0px;
+}
+.forecast th {
+    font-size: 28px;
+}
+.forecast td {
+    font-size: 16px;
+}
