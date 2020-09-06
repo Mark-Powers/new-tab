@@ -9,4 +9,5 @@ const GITEA_URL = undefined;
 const FILES_URL = undefined;
 const FILE_FEED_URL = undefined;
 const CALENDAR_URL = undefined;
-const WEATHER_UNITS = "imperial"
+const WEATHER_UNITS = "imperial";
+const BUDGET_URL = undefined;
