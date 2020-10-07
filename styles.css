@@ -107,3 +107,20 @@ button {
     padding: 3px;
     font-size: 16px;
 }
+span.status-up {
+    display: inline-block;
+    background-color: green;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    margin-left: 1em;
+}
+span.status-down {
+    display: inline-block;
+    background-color: red;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    margin-left: 1em;
+}
+
